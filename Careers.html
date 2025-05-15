@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> careers </title>
+     <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav>
+     <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+        <li><a href="./BSBL  antivirus.html">Home</a></li>
+        <li><a href="./About us.html">About Us </a></li>
+        <li><a href="./Careers.html">Careers </a></li>
+        <li><a href="Internships.html">Internships</a></li>
+        <li><a href="Contact Details.html">Contact Details</a></li>
+    </ul>
+    <ul>
+        <li><a herf="#">BSBL Antivirus</a></li>
+        <li class="hideOnMobile"><a href="./BSBL  antivirus.html">Home</a></li>
+        <li class="hideOnMobile"><a href="./About us.html">About Us</a></li>
+        <li class="hideOnMobile"><a href="./Careers.html">Careers</a></li>
+        <li class="hideOnMobile"><a href="Internships.html">Internships</a></li>
+        <li class="hideOnMobile"><a href="Contact Details.html">Contact Details</a></li>
+        <li class="menu-button" onclick=showSidebar()> <a herf= "#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#000000"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+
+    </ul>
+  </nav>  
+  <script>
+    function showSidebar(){
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'  
+    }
+    function hideSidebar(){
+       const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }  
+  </script>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color:#000;
+    }
+.content {
+      background-color: #000;
+      color: #fff;
+      padding: 2rem;
+    }
+
+    .content h1 {
+      margin-top: 0;
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #fff;
+      border-bottom: 2px solid #fff;
+      display: inline-block;
+      padding-bottom: 0.5rem;
+      text-align: center;
+    }
+.content p {
+      line-height: 1.8;
+      max-width: 800px;
+      margin: 1rem auto;
+      text-align:bottom;
+    }
+    * {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+  color: white;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 /2</div>
+  <img src="Richard.jpg" style="width:100%">
+  <div class="text">When my friend recommended that I go work in BSBL antivirus I said to him "Are you serious they are a huge company what difference can little old me make" now a mere 10 years later I am the head of web development at BSBL. It just shows the only thing stopping you is yourself and you should not pass up on oppourtunites when they come - Richard Sinclar Head of Web Development.</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 2</div>
+  <img src="Ryan.jpg" style="width:100%">
+  <div class="text"> I love working at BSBL its so refreshing to have an organisation care about its employees- Ryan Johnson - Junior Web Developer.</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+  </style>
+
+  <div class="content p">
+    <h1> About Careers </h1>
+
+    </div>
+
+    <div class="content">
+      <p> At BSBL Antivirus there is so many opportunites for up and coming web developers we have a brand new sector dedicated to web devoping opening up and we are looking for dedicated and skilled developers who want to join our team you wont reget it. But dont just take our word for it, all of our employees love working at BSBL and are glad that they joined the team take Kevin  for example he stated this "BSBL is a gigantic company but its not souless it has the facilitys for people to grow and it helps them grow though teamwork and collabration." How do I join the team? you may be asking well ask no more as we have linked our application form on this page  just simply click the button that says applications. But now  you may be asking, What qualifications and expriance do I need to work at BSBL? well BSBL requires a univirsity degree in computer science along with 3 years of experiance in this job. but now you may be saying What if I don't have the expriance/qualifications for the job? Well we have provided the resources for learning web development so that you can be sure that you get that degree, we have also provided the internships page which provides details about interning with us in order to get that required expriance for this job or a different one. So what are you waiting for? Apply now and be a part of something great be a part of BSBL. </p>
+    <a href="https://web.dev/learn/"> 
+      <button class="button"> Learning resources </button>
+
+      <a href="Application.html"> 
+      <button class="button"> Application form </button>
+
+    </a>
+</head>
+<body>
+</body>
+</html>
